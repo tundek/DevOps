@@ -8,11 +8,14 @@ After installation of git, then we can use this setting to setup our git configu
 
 First thing, we initialize git on our working directory
 
-`git init`
+```
+git init
+```
 
 #### Code Output
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image1.png">
+<img width="851" alt="image1" src="https://github.com/tundek/DevOps/assets/15998669/6c5887c9-8e23-46a3-b1af-b490b7971056">
+
 
 Then we can go ahead with our setup. You can change the information as required to your details
 
@@ -39,7 +42,8 @@ There are 3 different stages where files are in the GIT lifecycle
 
 #### Here's the demonstration for the above
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image2.png">
+<img width="660" alt="image2" src="https://github.com/tundek/DevOps/assets/15998669/191a6e74-c50a-4f1f-8c1b-6fcd8fe24fcc">
+
 
 From the above image, i used the `git status` to check the current status of my files on GIT and it indicates that none of the files are being tracked since i initialized git on the working folder.
 
@@ -47,15 +51,20 @@ This id also indicated with the red color of al files that are yet to be tracked
 
 I ran another command `git add .` command to start tracking all the files in the directory.
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image3.png">
+<img width="460" alt="image3" src="https://github.com/tundek/DevOps/assets/15998669/22366269-bb23-4248-aa83-270218576c84">
+
 
 After running the `git add` command followed by the git status, the above is the result, showing a green color of all the working files indicating the files are now being tracked and once work is done, can be commited.
 
-Let's commit the changes into the history books using the command `git commit -m "first commit"`
+Let's commit the changes into the history books using the command 
+```
+git commit -m "first commit"
+```
 
 #### Code Output
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image4.png">
+<img width="567" alt="image4" src="https://github.com/tundek/DevOps/assets/15998669/231b190a-4c6d-424e-8df8-dd1e4e141e77">
+
 
 
 # Working with Branches
@@ -70,26 +79,40 @@ A concept of branches came onboard, where by we create an exact copy of our proj
 
 With what i have seen (abi), there seems to be a number of ways to creating a new branch. Let's explore some of them.
 
-`git branch my_new_branch`
+```
+git branch my_new_branch
+```
 
 The above creates a new branch but doesn't login to it
 
-To create and switch into a new branch, use `git switch -c another_branch`
+To create and switch into a new branch, use 
+```
+git switch -c another_branch
+```
 
 #### Code output
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image5.png">
+<img width="498" alt="image5" src="https://github.com/tundek/DevOps/assets/15998669/04266c4d-d334-4fbc-8ac7-243dcf7381c1">
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image6.png">
+<img width="547" alt="image6" src="https://github.com/tundek/DevOps/assets/15998669/c0b996d7-3126-4abc-bac1-4cff5ffae8a4">
 
 
 ###### Another method of creating branch, using the checkout command and listing the branch
 
-Use can also the use the command `git checkout -b newest_branch` and use `git branch` to check the list of all available branches
+Use can also the use the command 
+```
+git checkout -b newest_branch
+```
+
+and use 
+```
+git branch
+````
+to check the list of all available branches
 
 #### Code output
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image7.png">
+<img width="562" alt="image7" src="https://github.com/tundek/DevOps/assets/15998669/5ff4e6ba-eb08-4c12-a8f2-455450f3fb2f">
 
 
 ### Change into an Old branch
@@ -104,26 +127,31 @@ Example:
 
 Switch => 
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image8.png">
+<img width="505" alt="image8" src="https://github.com/tundek/DevOps/assets/15998669/1c6ec98f-d43e-43ec-ba90-d8f6f9b273a1">
 
 Checkout =>
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image9.png">
+<img width="528" alt="image9" src="https://github.com/tundek/DevOps/assets/15998669/e240c843-5a62-4c8c-ac01-950afb45ddb0">
 
 
 ### Mergin a Branch into another Branch
 
 Let's switch into a new branch and make some changes on the new branch we switch to. Then exit into the main branch and see if the changes effect on the main branch
 
-`git switch new-branch`
+```
+git switch new-branch
+```
 
 Make some edits on the new branch, commit the changes and switch back into the main branch then run the following commands
 
-`git merge -m "Merging sample file, into the main branch" new-branch`
+```
+git merge -m "Merging sample file, into the main branch" new-branch
+```
 
 #### Code output
 
-<img width="600" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image10.png">
+<img width="923" alt="image10" src="https://github.com/tundek/DevOps/assets/15998669/bed6412d-af7b-408d-9e77-30127de999cf">
+
 
 
 # Collaboration and Remote Repositories
@@ -140,8 +168,77 @@ After that, create a repository where all your files will be hosted and let's co
 
 First off, we need to add a remote reporsitory to the local repo we have been working on, use the command
 
-`git remote add origin https://github.com/tundek/DevOps.git`
+```
+git remote add origin https://github.com/tundek/DevOps.git
+```
 
 Afterwards, it is time to push all your files to the remote repository using the command
 
 `git push origin <branch-name>` => `git push origin main`
+
+<img width="572" alt="Screenshot 2023-09-16 at 18 17 59" src="https://github.com/tundek/DevOps/assets/15998669/f7364c92-38ce-4a8c-9c89-637435e35a84">
+
+# Branch Management and Tagging
+
+## Introduction to Markdown Syntax
+
+## 1. Heading
+
+Just like having Headings h1 .... h6 in html, it is a little bit similar where a single # represents the highest heading and the more the number of # the smaller the heading becomes
+
+Example:
+
+# Heading 1
+## Heading 2
+### Heading 3
+
+## 2. Emphasis
+
+Making your text have the required text editing set, like Bold or italics,
+Example
+
+*italic* or _italic_
+**bold** or __bold__
+
+## 3. List
+Listing items on your documentation 
+
+
+- Item 1
+- Item 2
+- Item 3
+
+1. First item
+2. Second item
+3. Third item
+
+## 4. Links
+Creating links can also be done with the markdown where text in the [] will be displayed and the link will be in the ()
+
+[Click here for more info] (https://ecom2win.com)
+
+
+## 5. Images
+We can use image(s) in our markdown as well. 
+
+![Alt Text](https://example.com/image.jpg)
+
+
+## 6 Snippet
+To display code snipet in our markdown, we use the `` sign wh
+
+`git checkout new-branch`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
