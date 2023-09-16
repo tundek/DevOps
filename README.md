@@ -223,7 +223,7 @@ Creating links can also be done with the markdown where text in the [] will be d
 ## 5. Images
 We can use image(s) in our markdown as well. 
 
-![Alt Text](https://example.com/image.jpg)
+"![Alt Text](https://example.com/image.jpg)"
 
 
 ## 6 Snippet
