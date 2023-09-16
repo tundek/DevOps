@@ -164,7 +164,9 @@ For Creating Remote repositories, we will be using GitHub as a Social Coding pla
 The account creation for github should be fairly simple to do, visit the [GitHub Website](https://github.com)
 After that, create a repository where all your files will be hosted and let's connect to the repo and upload all the work we have done so that we can collaborate with our workmates.
 
-<img width="700" alt="Git init" src="/Users/appple/Documents/DevOps_Projects/DevOps/Project1/images/image11.png">
+<img width="1231" alt="image11" src="https://github.com/tundek/DevOps/assets/15998669/8620d03e-824c-4d80-a77a-005efc68398e">
+
+
 
 First off, we need to add a remote reporsitory to the local repo we have been working on, use the command
 
