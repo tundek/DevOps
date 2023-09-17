@@ -1,4 +1,4 @@
-# Basci GIT Project (Project 2)
+# Basic GIT Project (Project 2)
 
 ## Initializing a Repository and Making Commits
 
