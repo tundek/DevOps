@@ -1,4 +1,6 @@
-# Initializing a Repository and Making Commits
+# Project Title: Basic GIT Project
+
+## Initializing a Repository and Making Commits
 
 First off, when you are trying to make use of git, there are some general setup that needs to be cleared off before we start using git on our working environment.
 
